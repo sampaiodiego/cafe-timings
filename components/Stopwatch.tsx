@@ -40,17 +40,13 @@ export function Stopwatch() {
 	};
 
 	const reset = () => {
-		if (isRunning) {
-			setTimeStart(Date.now());
-		} else {
-			setTimeStart(null);
-		}
+		stop();
 		setTime(0);
 	};
 
 	return (
 		<>
-			<h2>{time}</h2>
+			<h2>{(time / 1000).toFixed(2)}</h2>
 			<div>
 				<button className={styles.btn} onClick={() => startStop()}>
 					{isRunning ? 'Stop' : 'Start'}
