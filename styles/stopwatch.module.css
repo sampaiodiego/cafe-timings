@@ -1,0 +1,10 @@
+.btn {
+	/* padding: 1em; */
+	margin: 1em;
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	background-color: rgb(82, 113, 172);
+	color: white;
+	border: none;
+}
